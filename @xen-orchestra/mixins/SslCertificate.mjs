@@ -150,7 +150,7 @@ export default class SslCertificates {
   #handlers = new Map()
 
   constructor(app, { httpServer }) {
-    // don't setup the proxy if httpServer is not present
+    // don't set up the proxy if httpServer is not present
     //
     // that can happen when the app is instantiated in another context like xo-server-recover-account
     if (httpServer === undefined) {

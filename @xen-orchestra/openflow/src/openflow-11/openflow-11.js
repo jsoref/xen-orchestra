@@ -292,8 +292,8 @@ export default {
   defaultPriority: 0x8000,
 
   instructionType: {
-    goToTable: 1, // Setup the next table in the lookup pipeline
-    writeMetadata: 2, // Setup the metadata field for use later in pipeline
+    goToTable: 1, // Set up the next table in the lookup pipeline
+    writeMetadata: 2, // Set up the metadata field for use later in pipeline
     writeActions: 3, // Write the action(s) onto the datapath action set
     applyActions: 4, // Applies the action(s) immediately (no writing in action set)
     clearActions: 5, // Clears all actions from the datapath action set
