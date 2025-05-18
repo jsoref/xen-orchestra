@@ -58,7 +58,7 @@ export async function setVmDeltaChainLength(xapi, vmRef, length) {
 
 /**
  * Compute the delta chain length of a VM and its associated VDIs
- * if there is a discrependcy, use, the highest value
+ * if there is a discrepancy, use, the highest value
  * @param {Xapi} xapi
  * @param {String} vmRef
  * @returns {Promise}
