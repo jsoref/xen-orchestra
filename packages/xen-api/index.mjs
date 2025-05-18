@@ -514,7 +514,7 @@ export class Xapi extends EventEmitter {
     // XAPI does not support chunk encoding so there is no proper way to send
     // data without knowing its length
     //
-    // as a work-around, a huge content length (1PiB) is added (so that the
+    // as a workaround, a huge content length (1PiB) is added (so that the
     // server won't prematurely cut the connection), and the connection will be
     // cut once all the data has been sent without waiting for a response
     const isStream = typeof body.pipe === 'function'

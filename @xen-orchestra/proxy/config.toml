@@ -26,7 +26,7 @@ snapshotNameLabelTpl = '[XO Backup {job.name}] {vm.name_label}'
 vhdDirectoryCompression = 'brotli'
 
 
-# This is a work-around.
+# This is a workaround.
 #
 # See https://github.com/vatesfr/xen-orchestra/pull/4674
 maxMergedDeltasPerRun = 2
