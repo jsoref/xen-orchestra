@@ -449,7 +449,7 @@ export default {
     loop: 7, // Group entry would cause a loop
     unknownGroup: 8,
     /* Group not modified because a group
-     * MODIFY attempted to modify a non-existent group.
+     * MODIFY attempted to modify a nonexistent group.
      */
   },
 
