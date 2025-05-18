@@ -287,7 +287,7 @@ test('it finish unterminated merge ', async () => {
 })
 
 // each of the vhd can be a file, a directory, an alias to a file or an alias to a directory
-// the message an resulting files should be identical to the output with vhd files which is tested independantly
+// the message and resulting files should be identical to the output with vhd files which is tested independantly
 describe('tests multiple combination ', { concurrency: 1 }, () => {
   for (const useAlias of [true, false]) {
     for (const vhdMode of ['file', 'directory']) {
