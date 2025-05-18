@@ -331,7 +331,7 @@ export default class RemoteHandlerAbstract {
     await this._rmtree(normalizePath(dir))
   }
 
-  // Asks the handler to sync the state of the effective remote with its'
+  // Asks the handler to sync the state of the effective remote with its
   // metadata
   //
   // This method MUST ALWAYS be called before using the handler.
