@@ -4285,7 +4285,7 @@ export const esxiListVms = (host, user, password, sslVerify) =>
 
 export const importVmsFromEsxi = params => _call('vm.importMultipleFromEsxi', params)
 
-// Github API ---------------------------------------------------------------
+// GitHub API ---------------------------------------------------------------
 const _callGithubApi = async (endpoint = '') => {
   const url = new URL('https://api.github.com/repos/vatesfr/xen-orchestra')
   url.pathname += endpoint
