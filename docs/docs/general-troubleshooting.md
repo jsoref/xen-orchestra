@@ -40,4 +40,4 @@ You can also check the system logs, [as explained here](troubleshooting#cli).
 
 ## You haven't found a solution here?
 
-Open a ticket concerning your issue on your personal space [here](https://xen-orchestra.com/#!/member/support)
+You can [open a ticket concerning your issue in your personal space](https://xen-orchestra.com/#!/member/support)
