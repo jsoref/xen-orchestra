@@ -45,7 +45,7 @@ export default class NbdClient {
 
   #waitingForResponse // there is already a listenner waiting for a response
   #nextCommandQueryId = BigInt(0)
-  #commandQueryBacklog // map of command waiting for an response queryId => { size/*in byte*/, resolve, reject}
+  #commandQueryBacklog // map of command waiting for a response queryId => { size/*in byte*/, resolve, reject}
   #connected = false
 
   #reconnectingPromise
