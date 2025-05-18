@@ -241,7 +241,7 @@ export default class VhdEsxiSeSparse extends VhdAbstract {
           const offsetByte = grainIndex * GRAIN_SIZE_BYTES + this.#grainOffsetBytes
           addGrain(offsetByte)
         } else {
-          // multiply by -1 to differenciate type and offset
+          // multiply by -1 to differentiate type and offset
           // no offset can be zero
           addGrain(-grainType)
         }
