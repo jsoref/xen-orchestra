@@ -307,7 +307,7 @@ export class Xapi extends EventEmitter {
     return jsonHash(args)
   }
 
-  // this should be used for instantaneous calls, otherwise use `callAsync`
+  // this should be used for instantaneous calls; otherwise, use `callAsync`
   call(method, ...args) {
     return isReadOnlyCall(method, args)
       ? this._roCall(method, args)
