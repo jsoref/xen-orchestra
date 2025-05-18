@@ -217,7 +217,7 @@ export default class RemoteHandlerAbstract {
   }
 
   // Free the resources possibly dedicated to put the remote at work, when it
-  // is no more needed
+  // is no longer needed
   //
   // FIXME: Some handlers are implemented based on system-wide mecanisms (such
   // as mount), forgetting them might breaking other processes using the same
