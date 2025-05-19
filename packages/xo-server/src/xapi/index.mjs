@@ -791,7 +791,7 @@ export default class Xapi extends XapiBase {
 
         try {
           // vmdk size can be wrong in ova
-          // we use the size ine the vmdk descriptor to create the vdi
+          // we use the size in the vmdk descriptor to create the vdi
           const vdi = (vdis[diskMetadata.path] = await this._getOrWaitObject(
             await this.VDI_create({
               name_description: diskMetadata.descriptionLabel,
