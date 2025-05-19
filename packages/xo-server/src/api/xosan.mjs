@@ -241,7 +241,7 @@ function reconfigurePifIP(xapi, pif, newIP) {
   xapi.call('PIF.reconfigure_ip', pif.$ref, 'Static', newIP, '255.255.255.0', '', '')
 }
 
-// this function should probably become fixSomething(thingToFix, parmas)
+// this function should probably become fixSomething(thingToFix, params)
 export async function fixHostNotInNetwork({ xosanSr, host }) {
   await this.checkXosanLicense({ srId: xosanSr.uuid })
 
