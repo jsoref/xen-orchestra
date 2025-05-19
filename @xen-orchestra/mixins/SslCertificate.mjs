@@ -176,7 +176,7 @@ export default class SslCertificates {
 
     const { acmeDomain } = config
 
-    // not a let's encrypt protected end point, sommething changed in the configuration
+    // not a let's encrypt protected end point, something changed in the configuration
     if (acmeDomain === undefined) {
       handlers.delete(configKey)
       return
