@@ -43,7 +43,7 @@ async function getDeltaChainLength(xapi, type, ref) {
 }
 
 /**
- * set the delta chain lenght ( number of delta since last base backup) to a VM and its associated VDIs
+ * set the delta chain length ( number of delta since last base backup) to a VM and its associated VDIs
  *
  * @param {Xapi} xapi
  * @param {String} vmRef
