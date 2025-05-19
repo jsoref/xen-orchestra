@@ -41,7 +41,7 @@ describe('VhdSynthetic', async () => {
 
       const bigVhd = yield openVhd(handler, bigVhdFileName)
       await bigVhd.readBlockAllocationTable()
-      // add parent locato
+      // add parent locator
       // this will also scramble the block inside the vhd files
       await bigVhd.writeParentLocator({
         id: 0,

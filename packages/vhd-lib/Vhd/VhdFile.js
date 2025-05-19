@@ -448,7 +448,7 @@ exports.VhdFile = class VhdFile extends VhdAbstract {
       } else {
         const firstAndLastBlocks = getFirstAndLastBlocks(this.#blockTable)
         if (firstAndLastBlocks === undefined) {
-          // no block in data : put the parent locatorn entry at the end
+          // no block in data : put the parent locator entry at the end
           position = this._getEndOfData()
         } else {
           // need more size
