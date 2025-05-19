@@ -59,7 +59,7 @@ module.exports = async function* vhdStreamValidator(source) {
 
     // do not use `assert.strictDeepEqual` as it does not provide a compact (for buffers) or complete (for strings) result
     //
-    //  - save only expected data and diff
+    // - save only expected data and diff
     // - save expected buffer as hex string for compactness and readability
     // - save diff as an array of differences represented as hex strings
     if (!last.equals(footer1)) {
