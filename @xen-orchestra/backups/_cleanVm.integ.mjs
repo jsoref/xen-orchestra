@@ -308,7 +308,7 @@ describe('tests multiple combination ', { concurrency: 1 }, () => {
           await VhdAbstract.createAlias(handler, 'broken.alias.vhd', brokenVhdDataPath)
         }
 
-        // a vhd non referenced in metada
+        // a vhd non referenced in metadata
         await generateVhd(`${basePath}/nonreference.vhd`, { useAlias, mode: vhdMode })
         // an abandoned delta vhd without its parent
         await generateVhd(`${basePath}/abandoned.vhd`, {
