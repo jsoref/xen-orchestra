@@ -7,7 +7,7 @@ export type FileDescriptor = number
  * for example in browser or from a vmware datastore
  *
  * NOTE : file assessor on datastore should try to use a stream
- * and read/skip from this when possible, since openingn a new stream is costly
+ * and read/skip from this when possible, since opening a new stream is costly
  * and we are generally reading the vhd sequentially
  */
 export interface FileAccessor {

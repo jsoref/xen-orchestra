@@ -105,7 +105,7 @@ exports.VhdDirectory = class VhdDirectory extends VhdAbstract {
   static async open(handler, path, { flags = 'r+' } = {}) {
     const vhd = new VhdDirectory(handler, path, { flags })
 
-    // openning a file for reading does not trigger EISDIR as long as we don't really read from it :
+    // opening a file for reading does not trigger EISDIR as long as we don't really read from it :
     // https://man7.org/linux/man-pages/man2/open.2.html
     // EISDIR pathname refers to a directory and the access requested
     // involved writing (that is, O_WRONLY or O_RDWR is set).
