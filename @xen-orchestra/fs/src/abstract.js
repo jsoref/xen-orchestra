@@ -210,7 +210,7 @@ export default class RemoteHandlerAbstract {
       validator,
     })
     if (checksum) {
-      // using _outpuFile means the checksum will NOT be encrypted
+      // using _outputFile means the checksum will NOT be encrypted
       // it is by design to allow checking of encrypted files without the key
       await this._outputFile(checksumFile(path), await checksumStream.checksum, { dirMode, flags: 'wx' })
     }

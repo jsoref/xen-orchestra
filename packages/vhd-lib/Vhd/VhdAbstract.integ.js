@@ -192,7 +192,7 @@ describe('VhdAbstract', { concurrency: 1 }, async () => {
       const bufHeader = buffer.slice(FOOTER_SIZE, HEADER_SIZE + FOOTER_SIZE)
       assert.doesNotThrow(() => unpackHeader(bufHeader, footer))
 
-      // 1 deleted block should be in ouput
+      // 1 deleted block should be in output
       let start = FOOTER_SIZE + HEADER_SIZE + vhd.batSize
 
       const parentLocatorData = buffer.slice(start, start + SECTOR_SIZE)
