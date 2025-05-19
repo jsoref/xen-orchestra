@@ -34,7 +34,7 @@ maxMergedDeltasPerRun = 2
 # Each `http.listen.<name>` entry defines a specific listening configuration for
 # the HTTP server.
 #
-# `<name>` can be freely choosen.
+# `<name>` can be freely chosen.
 [http.listen.https]
 
 # Generate self-signed certificate if missing

@@ -132,7 +132,7 @@ useForwardedHeaders = false
 # Each `http.listen.<name>` entry defines a specific listening configuration for
 # the HTTP server.
 #
-# `<name>` can be freely choosen.
+# `<name>` can be freely chosen.
 #
 # Historically, `http.listen` was an array with the first config for HTTP and
 # the second for HTTPS. To avoid breaking existing user configs, this convention
