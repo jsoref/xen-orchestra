@@ -461,7 +461,7 @@ export default class S3Handler extends RemoteHandlerAbstract {
         this.#s3.middlewareStack.use(getApplyMd5BodyChecksumPlugin(this.#s3.config))
       }
     } catch (error) {
-      // maybe the account doesn't have enought privilege to query the object lock configuration
+      // maybe the account doesn't have enough privilege to query the object lock configuration
       // be defensive and apply the md5  just in case
       if (error.$metadata.httpStatusCode === 403) {
         info(`s3 user doesnt have enough privilege to check for Object Lock, enable content MD5 header`)
