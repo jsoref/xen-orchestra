@@ -46,7 +46,7 @@ export default class VhdEsxiCowd extends VhdAbstract {
     // and a vhd block is also 2M
     // so we only need to check if a grain table exists (it's not created without data)
 
-    // depending on the paramters we also look into the parent data
+    // depending on the parameters we also look into the parent data
     return (
       this.#grainDirectory.readUInt32LE(blockId * 4) !== 0 ||
       (this.#lookMissingBlockInParent && this.#parentVhd.containsBlock(blockId))
