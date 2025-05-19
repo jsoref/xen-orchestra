@@ -110,7 +110,7 @@ export default class VhdEsxiSeSparse extends VhdAbstract {
     )
   }
 
-  // since most of the data are writtent sequentially we always open a stream from start to the end of the file
+  // since most of the data are written sequentially we always open a stream from start to the end of the file
   // If we have to rewind it, we destroy the stream and recreate with the right "start"
   // We also recreate the stream if there is too much distance between current position and the wanted position
 
