@@ -92,7 +92,7 @@ export function resetVmOtherConfig(xapi, vmRef) {
 
 /**
  *
- * used to ensure compatibiliy with the previous snapshots that were having the config stored only into VM
+ * used to ensure compatibility with the previous snapshots that were having the config stored only into VM
  *
  * @param {Xapi} xapi
  * @param {String} vmRef

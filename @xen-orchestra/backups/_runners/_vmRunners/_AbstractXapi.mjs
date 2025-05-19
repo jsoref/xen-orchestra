@@ -195,7 +195,7 @@ export const AbstractXapi = class AbstractXapiVmBackupRunner extends Abstract {
       }
     })
     await Promise.all(vmSnapshots.map(snapshot => populateVdisOtherConfig(xapi, snapshot.$ref)))
-    // end of compatibiliy handling
+    // end of compatibility handling
 
     // handle snapshot by VDI
     this._jobSnapshotVdis = []
