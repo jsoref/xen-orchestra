@@ -21,7 +21,7 @@ exports.resolveVhdAlias = async function resolveVhdAlias(handler, filename) {
   }
 
   const aliasContent = (await handler.readFile(filename)).toString().trim()
-  // also handle circular references and unreasonnably long chains
+  // also handle circular references and unreasonably long chains
   if (isVhdAlias(aliasContent)) {
     throw new Error(`Chaining alias is forbidden ${filename} to ${aliasContent}`)
   }
