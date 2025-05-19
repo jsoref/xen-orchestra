@@ -790,7 +790,7 @@ export class RemoteAdapter {
       json = await this.handler.readFile(path, { flag: 'r+' })
       // s3 handler don't respect flags
     } catch (err) {
-      // retry without triggerring immutability check ,only on immutable remote
+      // retry without triggering immutability check ,only on immutable remote
       if (err.code === 'EPERM' && remoteIsImmutable) {
         isImmutable = true
         json = await this._handler.readFile(path, { flag: 'r' })
