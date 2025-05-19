@@ -1122,7 +1122,7 @@ export const removeBricks = defer(async function ($defer, { xosansr, bricks }) {
     // IPV6
     const ips = map(bricks, b => b.split(':')[0])
     const glusterEndpoint = this::_getGlusterEndpoint(xosansr.id)
-    // "peer detach" doesn't allow removal of locahost
+    // "peer detach" doesn't allow removal of localhost
     remove(glusterEndpoint.addresses, ip => ips.includes(ip))
     const dict = _getIPToVMDict(xapi, xosansr.id)
     const brickVMs = map(bricks, b => dict[b])
