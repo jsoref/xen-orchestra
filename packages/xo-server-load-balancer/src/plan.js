@@ -308,7 +308,7 @@ export default class Plan {
   }
 
   // ===================================================================
-  // vCPU pre-positionning helpers
+  // vCPU pre-positioning helpers
   // ===================================================================
 
   async _processVcpuPrepositionning(hosts) {
