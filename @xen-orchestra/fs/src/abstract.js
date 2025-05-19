@@ -644,7 +644,7 @@ export default class RemoteHandlerAbstract {
           if (error.code === 'EISDIR' || error.code === 'EPERM') {
             return this._rmtree(`${dir}/${file}`).catch(rmTreeError => {
               if (rmTreeError.code === 'ENOTDIR') {
-                // this was realy a EPERM error, maybe with immutable backups
+                // this was really a EPERM error, maybe with immutable backups
                 throw error
               }
               throw rmTreeError
