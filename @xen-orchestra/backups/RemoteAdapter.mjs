@@ -774,7 +774,7 @@ export class RemoteAdapter {
     let json
     let isImmutable = false
     let remoteIsImmutable = false
-    // if the remote is immutable, check if this metadatas are also immutables
+    // if the remote is immutable, check if this metadata is also immutable
     try {
       // this file is not encrypted
       await this._handler._readFile(IMMUTABILITY_METADATA_FILENAME)
