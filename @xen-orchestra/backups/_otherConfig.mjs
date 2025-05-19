@@ -152,7 +152,7 @@ export async function setVmOtherConfig(xapi, vmRef, { timestamp, jobId, schedule
 }
 /**
  *
- * mark the export of he VM and its VDIs as successfull
+ * mark the export of he VM and its VDIs as successful
  *
  * @param {Xapi} xapi
  * @param {String} vmRef
