@@ -39,7 +39,7 @@ export const DIR_XO_CONFIG_BACKUPS = 'xo-config-backups'
 
 export const DIR_XO_POOL_METADATA_BACKUPS = 'xo-pool-metadata-backups'
 
-const IMMUTABILTY_METADATA_FILENAME = '/immutability.json'
+const IMMUTABILITY_METADATA_FILENAME = '/immutability.json'
 
 const { debug, warn } = createLogger('xo:backups:RemoteAdapter')
 
@@ -777,7 +777,7 @@ export class RemoteAdapter {
     // if the remote is immutable, check if this metadatas are also immutables
     try {
       // this file is not encrypted
-      await this._handler._readFile(IMMUTABILTY_METADATA_FILENAME)
+      await this._handler._readFile(IMMUTABILITY_METADATA_FILENAME)
       remoteIsImmutable = true
     } catch (error) {
       if (error.code !== 'ENOENT') {
@@ -790,7 +790,7 @@ export class RemoteAdapter {
       json = await this.handler.readFile(path, { flag: 'r+' })
       // s3 handler don't respect flags
     } catch (err) {
-      // retry without triggerring immutbaility check ,only on immutable remote
+      // retry without triggerring immutability check ,only on immutable remote
       if (err.code === 'EPERM' && remoteIsImmutable) {
         isImmutable = true
         json = await this._handler.readFile(path, { flag: 'r' })
