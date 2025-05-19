@@ -386,7 +386,7 @@ export default class RemoteHandlerAbstract {
       const data = await this.__readFile(ENCRYPTION_METADATA_FILENAME)
       JSON.parse(data)
     } catch (error) {
-      // can be enoent, bad algorithm, or broeken json ( bad key or algorithm)
+      // can be enoent, bad algorithm, or broken json ( bad key or algorithm)
       if (encryptionAlgorithm !== 'none') {
         if (await this.#canWriteMetadata()) {
           // any other error , but on empty remote => update with remote settings
