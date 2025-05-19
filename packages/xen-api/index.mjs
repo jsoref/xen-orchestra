@@ -1326,7 +1326,7 @@ export class Xapi extends EventEmitter {
   // - `$<name>` fields: return the cached object(s) pointed by the `<name>` field
   // - `add_<name>(value)` async method: add a value to a set field
   // - `remove_<name>(value)` async method: remove a value from a set field
-  // - `set_<name>(value)` async method: assigne a value to a field
+  // - `set_<name>(value)` async method: assign a value to a field
   // - `update_<name>(entry, value)` async method: set an entry of a map field to a value (remove if `null`)
   // - `update_<name>(entries)` async method: update entries of a map field
   _wrapRecord(type, ref, data) {
