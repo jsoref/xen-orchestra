@@ -59,7 +59,7 @@ const LTR_DEFINITIONS = {
  * return the entries too old to be kept
  *  if multiple entries are i the same time bucket : keep only the most recent one
  *  if an entry is valid in any of the bucket OR the  minRetentionCount : keep it
- *  if a bucket is completly empty : it does not count as one, thus it may extend the retention
+ *  if a bucket is completely empty : it does not count as one, thus it may extend the retention
  * @returns Array<Backup>
  */
 export function getOldEntries(minRetentionCount, entries, { longTermRetention = {}, timezone } = {}) {

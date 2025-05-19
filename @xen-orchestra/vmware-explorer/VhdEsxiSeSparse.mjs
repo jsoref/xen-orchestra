@@ -259,7 +259,7 @@ export default class VhdEsxiSeSparse extends VhdAbstract {
       grainOffsets !== undefined && !grainOffsets.some(value => value === -SE_SPARSE_GRAIN_NON_ALLOCATED)
 
     let parentBuffer, parentBlock
-    // don't read from parent is current block is already completly described
+    // don't read from parent is current block is already completely described
     if (isLocallyFull) {
       parentBuffer = Buffer.alloc(512 /* bitmap */ + 2 * 1024 * 1024 /* data */, 0)
       parentBuffer.fill(255, 0, 512) // bitmap is full  of bit 1
