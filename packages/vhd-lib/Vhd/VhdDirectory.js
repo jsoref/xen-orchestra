@@ -281,7 +281,7 @@ exports.VhdDirectory = class VhdDirectory extends VhdAbstract {
         // it will throw an error if block is missing in parent
         // won't detect if the block was already in parent and is broken/missing in child
 
-        // since we can't know the initizal size, this will create a discrepancy
+        // since we can't know the initial size, this will create a discrepancy
         // on the size
         const { data } = await this.readBlock(blockId)
         assert.strictEqual(data.length, this.header.blockSize)
