@@ -1562,7 +1562,7 @@ export const hidePcis = async (pcis, hide) => {
 
 export const isPciHidden = async pci => (await _call('pci.getDom0AccessStatus', { id: resolveId(pci) })) === 'disabled'
 
-//  ATM, unknown date for the availablity on XS, since they are doing rolling release
+//  ATM, unknown date for the availability on XS, since they are doing rolling release
 // FIXME: When XS release methods to do PCI passthrough, update this check
 export const isPciPassthroughAvailable = host =>
   host.productBrand === 'XCP-ng' && semver.satisfies(host.version, '>=8.3.0')
