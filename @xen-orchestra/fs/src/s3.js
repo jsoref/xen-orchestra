@@ -101,7 +101,7 @@ export default class S3Handler extends RemoteHandlerAbstract {
     ]
     WITH_RETRY.forEach(functionName => {
       if (this[functionName] !== undefined) {
-        // adding the retry on the top level mtehod won't
+        // adding the retry on the top level method won't
         // cover when _functionName are called internally
         this[functionName] = pRetry.wrap(this[functionName], {
           delays: [100, 200, 500, 1000, 2000],
