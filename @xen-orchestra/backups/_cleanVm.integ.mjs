@@ -132,7 +132,7 @@ test('it remove vhd with missing or multiple ancestors', async () => {
   const deletedOrphanVhd = loggued.match(/deleting orphan VHD/g) || []
   assert.equal(deletedOrphanVhd.length, 1) // only one vhd should have been deleted
 
-  // we don't test the filew on disk, since they will all be marker as unused and deleted without a metadata.json file
+  // we don't test the file on disk, since they will all be marker as unused and deleted without a metadata.json file
 })
 
 test('it remove backup meta data referencing a missing vhd in delta backup', async () => {
