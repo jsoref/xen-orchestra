@@ -48,7 +48,7 @@ describe('VhdSynthetic', async () => {
         platformCode: PLATFORMS.W2KU,
         data: Buffer.from('I am in the big one'),
       })
-      // header changed since thre is a new parent locator
+      // header changed since there is a new parent locator
       await bigVhd.writeHeader()
       // the footer at the end changed since the block have been moved
       await bigVhd.writeFooter()
