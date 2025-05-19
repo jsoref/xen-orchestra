@@ -84,7 +84,7 @@ export default class VhdEsxiCowd extends VhdAbstract {
     this.#grainDirectory = await this.#read(2048 /* header length */, nbBlocks * 4)
   }
 
-  // we're lucky : a grain address can address exacty a full block
+  // we're lucky : a grain address can address exactly a full block
   async readBlock(blockId) {
     notEqual(this.#grainDirectory, undefined, 'grainDirectory is not loaded')
     const sectorOffset = this.#grainDirectory.readUInt32LE(blockId * 4)
