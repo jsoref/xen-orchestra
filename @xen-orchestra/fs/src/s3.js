@@ -408,7 +408,7 @@ export default class S3Handler extends RemoteHandlerAbstract {
     // nothing to do, directories do not exist, they are part of the files' path
   }
 
-  // reimplement _rmtree to handle efficiantly path with more than 1000 entries in trees
+  // reimplement _rmtree to handle efficiently path with more than 1000 entries in trees
   // @todo : use parallel processing for unlink
   async _rmtree(path) {
     let NextContinuationToken
