@@ -1337,7 +1337,7 @@ export default class Xapi extends XapiBase {
     const config = await this.call('host.call_plugin', host.$ref, 'xscontainer', 'get_config_drive_default', {
       templateuuid: template.uuid,
     })
-    return config.slice(4) // FIXME remove the "True" string on the begining
+    return config.slice(4) // FIXME remove the "True" string on the beginning
   }
 
   // Specific CoreOS Config Drive
