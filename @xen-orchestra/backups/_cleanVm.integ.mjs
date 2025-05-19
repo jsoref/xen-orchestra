@@ -454,7 +454,7 @@ test('check Aliases should work alone', async () => {
     logWarn: () => {},
   })
 
-  // only ok have suvived
+  // only ok have survived
   const alias = (await handler.list('vhds')).filter(f => f.endsWith('.vhd'))
   assert.equal(alias.length, 1)
 
