@@ -544,7 +544,7 @@ export default class RestApi {
   constructor(app, { express }) {
     // don't setup the API if express is not present
     //
-    // that can happen when the app is instanciated in another context like xo-server-recover-account
+    // that can happen when the app is instantiated in another context like xo-server-recover-account
     if (express === undefined) {
       return
     }

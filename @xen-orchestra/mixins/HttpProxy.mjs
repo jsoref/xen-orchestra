@@ -32,7 +32,7 @@ export default class HttpProxy {
   constructor(app, { httpServer }) {
     // don't setup the proxy if httpServer is not present
     //
-    // that can happen when the app is instanciated in another context like xo-server-recover-account
+    // that can happen when the app is instantiated in another context like xo-server-recover-account
     if (httpServer === undefined) {
       return
     }
